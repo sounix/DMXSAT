@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <title>DMXSAT v2 - By Aldrin Gonzalez Cancino</title>
+
+    <!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+
+		<script src='libs/jquery-2.1.1.min.js'></script>
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src='libs/jszip.min.js'></script>
+		<script src='libs/jquery.base64.js'></script>
+		<script src='popup.js'></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container" style="width: 470px !important;">
+      <div class="row" style="margin: 0px;">
+        <nav class="navbar navbar-inverse bg-primary" style="margin-top: 15px;">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <div class="navbar-brand">DMXSAT v2</div>
+            </div>
+          </div>
+        </nav>
+
+        <blockquote class="blockquote-reverse">
+          <h4 class="text-primary">Descarga Masiva de XMLs desde el SAT</h4>
+          <small>Aldrin Gonzalez Cancino <span class="glyphicon glyphicon-user"></span></small>
+          <small>sounix@gmail.com <span class="glyphicon glyphicon-envelope"></span></small>
+          <small>Abril 25, 2017 <span class="glyphicon glyphicon-qrcode"></span></small>
+        </blockquote>
+      </div>
+
+      <div class="row" id="rowcontent" >
+        <div class="col-xs-12 text-center" style="margin-bottom: 10px;">
+          <a class="btn btn-info" id="seEncontraron">Se encontraron <span class="badge">0</span> CFDIs</a>
+        </div>
+
+				<div class="col-xs-12">
+					<div class="progress progress-striped active" id="barProgres">
+					  <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">0 / 1110</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row" style="margin-bottom: 15px;">
+				<div class="col-xs-12" id="msgs">
+					<div class="text-center alert alert-info" role="alert">
+						<strong>Buscando archivos ...</strong>
+					</div>
+				</div>
+
+				<div class="btnsshow col-xs-12 hidden text-right">
+					<button type="button" class="btn btn-primary" id="descargaCfdi"><span class="glyphicon glyphicon-save"></span> Descargar</button>
+				</div>
+			</div>
+
+		</div>
+  </body>
+</html>

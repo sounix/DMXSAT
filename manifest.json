@@ -1,0 +1,23 @@
+{
+   "browser_action": {
+      "default_icon": {
+         "19": "icon19.png",
+         "38": "icon38.png"
+      },
+      "default_popup": "popup.html"
+   },
+   "content_scripts": [ {
+      "js": [ "libs/jquery-2.1.1.min.js" ],
+      "matches": [ "https://portalcfdi.facturaelectronica.sat.gob.mx/*" ]
+   } ],
+   "description": "Descarga Masiva de XMLs desde el SAT",
+   "icons": {
+      "128": "icon128.png"
+   },
+   "manifest_version": 2,
+   "minimum_chrome_version": "16.0.884",
+   "name": "DMXSAT v2 By Aldrin Gonzalez Cancino",
+   "permissions": [ "downloads", "storage", "tabs", "https://portalcfdi.facturaelectronica.sat.gob.mx/*","activeTab", "http://*/", "https://*/" ],
+   "short_name": "DMXSAT v2",
+   "version": "2.0"
+}
