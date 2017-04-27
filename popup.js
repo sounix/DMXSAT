@@ -17,8 +17,9 @@ function getXmlSat (vLinks) {
   $.get(vLinks.url, function(data){
     listFiles.push({
       xml: data,
-      name: vLinks.name+'.xml'
+      name: vLinks.emisor + ' - ' + vLinks.name+'.xml'
     });
+
     var bar = $("#barProgres .progress-bar"),
     valor = parseFloat(bar.attr("aria-valuenow"))+incremetos;
     bar.attr('aria-valuenow', valor).css('width', valor+"%").text(parseInt(valor/incremetos)+' / '+visibleLinks.length);
